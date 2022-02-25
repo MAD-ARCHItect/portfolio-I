@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+:root{
+    margin-left: 0px;
+}
+*{
+    font-family: 'Poppins' ,sans-serif;
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    /* align-content: center; */
+
+
+}
+body{
+    width:min-content;
+}
+
+
+
+header{
+    background: black;
+    width: 100%;
+    height: 8vh;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+}
+.logo{
+    text-decoration: none;
+    color: red; 
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.8rem ;
+    background: black;
+    border-radius: 5% ;
+    padding: 0 2vw;
+    text-shadow: 0px 0px 2px white;
+
+
+}
+.navigation a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 400;
+    /* padding-left: 30px; */
+    padding: 10px 2vw;
+}
+.navigation a:hover{
+    background: red;
+    color:  blanchedalmond;
+    padding: 10px 2.5vw ;
+    border-radius: 10px;
+    box-shadow: 0 7px 70px rgba(255, 255, 255, 0.3);
+    transition: all 0.4s ease-in 0.1s;
+    
+}
+.logo:hover{
+    background: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    
+    border-radius: 10px;
+}
+
+.main{
+    background: red;
+    z-index: 900;
+    position: relative;
+    top: 8vh; 
+    padding:5vh 0vw;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(./resources/background1.jpg);
+    background-size: cover;
+  
+    background-position: center center;
+    background-attachment: fixed;
+    /* overflow: hidden; */
+
+    
+    
+    
+  
+}
+.main h2 {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-shadow: 4px 2px 4px black;
+     
+
+}
+.main h2 span { 
+    color: red;
+    font-weight:  600;
+    font-size: 3rem;
+    display: inline-block;
+    margin-top: 3vh ;
+}
+.main h3 { 
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+    text-shadow: 4px 2px 4px black;
+
+}
+.main-description{
+    position: absolute;
+    top : 20vh;
+    left: 8vw;
+}
+.main-btn{
+    text-decoration: none;
+    background : red ;
+    color: white;
+    font-size: 1.1rem;
+    display: inline-block;
+    font-weight: 600;
+    border-radius: 15px;
+    letter-spacing: 2px;
+    margin : 6vh 0;
+    padding: 1vh 4vw;
+    transition: transform 0.5s ease-in;
+    
+}
+.main-btn:hover{
+    background-color: rgb(139, 4, 4);
+    transform: scale(1.2);
+}.social-icons{
+    position: absolute;
+    left: 15.5vw ;
+    top: 70vh;
+    margin-top: 2vh;
+    transform: scale(2);
+    
+}
+.social-icons a {
+    margin-top: 4vh ;
+    margin-right: 2vw;
+    
+    border-radius: 10px;
+  
+    color: white;
+    padding: 1vw 1vh;
+    height: 2vh;
+    width: 4vw;
+    
+    /* transition: transform 5s ease;
+     */
+     /* transition: transform 0.5s ease ; */
+
+}
+.social-icons a :hover{
+    color: red;
+    transform: scale(2,2);
+}
+.cards{
+    
+    position: relative;
+    top : 0vh;
+    
+    box-shadow: 0 7px 50px rgba(1, 1, 1 , 15%);
+    
+    margin: 2vw 1vh;
+    padding-bottom: 20vh;
+    
+}
+
+
+.title{
+    display: flex;
+    justify-content: center;
+    color: black ;
+    /* text-shadow: 0px 0px 2px black; */
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    margin-top: 10vh;
+    margin-bottom: 4vh;
+    height: 100%;
+    width: 100vw;
+
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card { background: white;
+    color:black ;
+    width: 25vw;
+    box-shadow: 0 5px 25px rgba(1, 1, 1 , 15%) ;
+    border-radius: 10px;
+    padding: 1vh 1vw;
+    margin: 2vw;
+    transition: transform 0.5s ease 0.1s;
+ ;
+    
+
+}
+.card:hover{
+    transform: scale(1.2,1.2);
+
+}
+.icon{
+    color: red;
+    font-size: 6rem;
+    text-align: center;
+    text-shadow: 0px 0px 2px red;
+
+    
+
+}
+.info{
+    text-align: center;
+}
+.info h3{
+    color: red;
+    font-weight: 700;
+    text-shadow: 0px 0px 2px wheat;
+    margin: 1vh 1vw;
+
+}
+.projects{
+    position: relative;
+    top : 0vh;
+    
+    box-shadow: 0 7px 50px rgba(1, 1, 1 , 15%);
+    
+    margin: 2vh 0vw;
+    background: gray;
+
+}
+.projects .content{
+    margin-top: 10vh;
+
+}
+.project-card{
+    background: white;
+    border: 1px solid white;
+    min-height: 14rem ;
+    width: 20vw;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 3vw;
+    transition: 0.7s ease;
+}
+.project-card:hover{
+    transform: scale(1.1);
+}
+.project-image img{
+    height: 80%;
+   width: 100%;
+    
+}
+.project-image img:hover{
+    opacity: 0.9;
+
+}
+
+.project-info{
+    /* flex-direction: column; */
+    padding: 1rem;
+    
+
+}
+.project-category{
+    font-size: 0.8rem;
+
+}
+.project-title{
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 1vh;
+    
+}
+.more-details{
+   text-decoration:none ;
+   color: red;
+
+}
+.more-details:hover{
+    color: rgb(139, 4, 4);
+}
+.project-title span {
+    display: flex;
+    flex-direction: row;
+}
+footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background: black;
+    color:white;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 ;
+}
+.footer .social-icons{
+    position:absolute;
+    left: 70vw;
+    top: 4vh;
+    /* display: flex; */
+}
+.footer .social-icons a{
+    transform: scale(0.7);
+}
+@media (max-width:1023px){
+    
+ 
+    header {
+        width: 100vw;
+        padding-left: 0;
+        justify-content:unset;
+    }
+    .logo{
+        font-size: 1.5rem;
+
+    }
+    .navigation{
+        margin: 0;
+    }
+    .navigation a {
+        color: white;
+        text-decoration: none;
+        font-size: 0.8rem;
+        font-weight: 400;
+        /* padding-left: 30px; */
+        padding: 10px 2vw;
+    }
+    .main{
+        background: url(./resources/background1.jpg);
+        
+        z-index: 900;
+        position: relative;
+        top: 8vh; 
+        padding:5vh 0vw;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        /* background: url(./resources/background1.jpg); */
+        background-size: cover;
+        flex-direction: column;
+      
+        background-position: center center;
+        background-attachment: fixed;
+        /* overflow: hidden; */
+    }
+    .main h2 {
+        color: white;
+        font-size: 1.2rem;
+        font-weight: 500;
+        text-shadow: 4px 2px 4px black;
+         
+    
+    }
+    .main h2 span { 
+        color: red;
+        font-weight:  600;
+        font-size: 2rem;
+        display: inline-block;
+        margin-top: 3vh ;
+    }
+    .main h3 { 
+        color: white;
+        font-size: 1.5rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin-top: 3vh;
+        margin-bottom: 2vh;
+        text-shadow: 4px 2px 4px black;
+       
+    
+    }
+    .cards{
+    
+        position: relative;
+        top : 0vh;
+        box-shadow: 0 7px 50px rgba(1, 1, 1 , 15%);
+        
+        margin: 2vh 0vw;
+        padding-bottom: 20vh;
+        
+    }
+    .content{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .icon{
+        color: red;
+        font-size: 4rem;
+        text-align: center;
+        text-shadow: 0px 0px 2px red;
+    
+        
+    
+    }
+    .info{
+        text-align: center;
+    }
+    .card{
+        width: 50vw;
+    }
+    .info h3{
+        color: red;
+        font-weight: 600;
+        text-shadow: 0px 0px 2px wheat;
+        margin: 1vh 1vw;
+        padding: 0px 4vw;
+    
+    }
+    .project-card{
+        background: white;
+        border: 1px solid white;
+        min-height: 14rem ;
+        width: 40vw;
+        overflow: hidden;
+        border-radius: 10px;
+        margin: 3vh;
+        transition: 0.7s ease;
+    }
+    .footer-title{
+        font-size: 0.5rem;
+    }
+    .footer .social-icons{
+        position:absolute;
+        left: 60vw;
+        top: 1vh;
+        
+        transform: scale(1, 0.8) ;
+    }
+    .footer .social-icons a{
+        /* transform: scale(0.3); */
+        width:20px;
+        height: 20%;
+    }
+  
+
+   
+
+
+
+
+}
